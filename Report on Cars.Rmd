@@ -1,0 +1,17 @@
+---
+title: "Report on Cars"
+author: "Vincent"
+date: "18/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE}
+library(dslabs)
+n <- nrow(mtcars)
+```
+Here `r n` cars are compared
+

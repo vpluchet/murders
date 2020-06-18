@@ -1,0 +1,44 @@
+---
+title: "Report Trial"
+author: "Vincent"
+date: "18/06/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r eval=FALSE}
+a <- 2
+```
+Code was:
+{r eval=FALSE}
+a <- 2
+
+eval=FALSE: the code will not be evaluated
+
+
+```{r include=FALSE}
+print("Hello World!")
+a <- 5
+```
+Code was:
+{r include=FALSE}
+print("Hello World!")
+a <- 5
+
+include=FALSE: the code will be evaluated but the output will not be shown
+
+
+```{r echo=FALSE}
+a <- a+1
+print(a)
+```
+Code was:
+{r echo=FALSE}
+a <- a+1
+print(a)
+
+echo=FALSE: the code will be evaluated and the output shown, but the code will not be shown
+
